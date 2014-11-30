@@ -16,10 +16,10 @@ class GeocachesController < ApplicationController
   def create
     @geocache = current_user.geocaches.new(cache_params)        
     if @geocache.save
-      flash[:notice] = "Kätkö luotu"
+      flash[:notice] = t('cache_created')
       redirect_to geocache_index_path
     else
-      flash[:alert] = "Ei toiminu :("
+      flash[:alert] = t('problem_creating')
       render 'new'
     end
   end
@@ -31,10 +31,10 @@ class GeocachesController < ApplicationController
   def update
     @geocache = current_user.geocaches.find_by(id: params[:id])        
     if @geocache.update(cache_params)
-      flash[:notice] = "Succesfully updated"
+      flash[:notice] = t('succesfully_updated')
       redirect_to geocache_index_path
     else
-      flash[:alert] = "Problems"
+      flash[:alert] = t('problem_updating')
       render 'edit'
     end
   end
@@ -42,9 +42,10 @@ class GeocachesController < ApplicationController
   def destroy
     @geocache = current_user.geocaches.find_by(id: params[:id])        
     if @geocache.destroy!
-
+      flash[:notice] = t('succesfully_deleted')
+      redirect_to geocache_index_path
     else
-      flash[:alert] = "Problem deleting"
+      flash[:alert] = t('problem_deleting')
       redirect_to root_path
     end
   end

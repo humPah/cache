@@ -1,9 +1,9 @@
 <h1>
-MOI
+<%= t('.greeting') %>
 </h1>
 <% if current_user %>
-	<%= link_to "CACHES", geocache_index_path, class: "" %>
+	<%= link_to t('.caches'), geocache_index_path, class: "btn btn-default" %>
 <% else %>
-	<%= link_to "Sign up", new_user_registration_path, class: "" %>
-	<%= link_to "Sign in", new_user_session_path, class: "" %>
+	<%= link_to t('.sign_up'), new_user_registration_path, class: "btn btn-default" %>
+	<%= link_to t('.sign_in'), new_user_session_path, class: "btn btn-default" %>
 <% end %>

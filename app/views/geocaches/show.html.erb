@@ -1,26 +1,32 @@
 <h3>
-Name:
+<%= t('.name') %>:
 </h3>
 <h3>
 <%= @geocache.name%>
 </h3>
 <h3>
-Code:
+<%= t('.coordinates') %>:
+</h3>
+<h3>
+<%= @geocache.coordinates%>
+</h3>
+<h3>
+<%= t('.code') %>:
 </h3>
 <h3>
 <%= @geocache.code%>
 </h3>
 <h3>
-Description:
+<%= t('.description') %>:
 </h3>
 <h3>
 <%= @geocache.description%>
 </h3>
 <h3>
-Notes:
+<%= t('notes') %>:
 </h3>
 <h3>
 <%= @geocache.notes%>
 </h3>
 <hr>
-<%= link_to "Back to geocaches", geocache_index_path %>
+<%= link_to t('.back_to_geocaches'), geocache_index_path %>

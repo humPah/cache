@@ -20,4 +20,104 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  cache_created: "Geocache created"
+  problem_creating: "Problem creating the geocache"
+  succesfully_updated: "Succesfully uptadd"
+  problem_updating: "Problem updating"
+  succesfully_deleted: "Succesfully deleted"
+  problem_deleting: "Problem deleting"
+  devise:
+    mailer:
+      reset_password_instructions:
+        hello: "Hello"
+        someone_requested: "Someone has requested a link to change your password. You can do this through the link below."
+        change_my_password: "Change my password"
+        if_you_didnt: "If you didn't request this, please ignore this email."
+        your_password_wont_be: "Your password won't change until you access the link above and create a new one."
+    passwords:
+      new:
+        forgot_your_password: "Forgot your password?"
+        email: "Email"
+        send_me: "Send me reset password instructions"
+      edit:
+        change_password: "Change your password"
+        new_password: "New password"
+        confirm_new_password: "Confirm new password"
+        change_my_password: "Change my password"
+    registrations:
+      new:
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+      edit:
+        edit: "Edit"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        current_password: "Current password"
+        update: "Update"
+        updating: "Updating"
+        delete_my_account: "Delete my account"
+        delete: "Delete"
+        are_you_sure: "Are you sure?"
+        back: "Back"
+    sessions:
+      new:
+        email: "Email"
+        password: "Password"
+        remember_me: "Remember me"
+        sign_in: "Sign in"
+        signing_in: "Signing in"
+    shared:
+      links:
+        sign_in: "Sign in"
+        sign_up: "Sign up"
+        forgot_your_password: "Forgot your password?"
+  geocaches:
+    show:      
+      name: "Name"
+      coordinates: "Coordinates"
+      code: "Code"
+      description: "Description"
+      notes: "Notes"
+      back_to_geocaches: "Back to geocaches"
+    form:
+      name: "Name"
+      coordinates: "Coordinates"
+      code: "Code"
+      description: "Description"
+      notes: "Notes"
+    edit:
+      edit_cache: "Edit cache"      
+      submit: "Submit"
+      submitting: "Submitting"
+    index:
+      name: "Name"
+      coordinates: "Coordinates"
+      details: "Details"
+      edit: "Edit"
+      delete: "Delete"
+      add_a_new_geocache: "Add a new geocache"
+      are_you_sure: "Are you sure you want to destroy this geocache?"
+    new:
+      add_cache: "Add a new cache"      
+      submit: "Submit"
+      submitting: "Submitting"      
+  static_pages:
+    home:
+      greeting: "Welcome to the geocache page! Here you can save and store your geocaches."
+      browse_caches: "Browse caches"
+      sign_up: "Sign up"
+      sign_in: "Sign in"
+    faq:
+      back: "Back"
+  shared:
+    header:
+      home: "Home"
+      caches: "Caches"
+      settings: "Settings"
+      log_out: "Log out"
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+    faq:
+      faq: "FAQ"

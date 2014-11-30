@@ -1,7 +1,7 @@
 <h3>
-Add a new cache
+<%= t('.add_a_new_cache') %>
 </h3>
 <%= form_for @geocache, :url => {controller: "geocaches", action: "create"}, method: :post do |f| %>
 <%= render 'form', f: f %>
-<%= f.submit "Submit", class: "btn btn-default", data: {disable_with: "Submitting..."} %>
+<%= f.submit t('.submit'), class: "btn btn-default", data: {disable_with: t('.submitting')} %>
 <% end %>
