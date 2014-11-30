@@ -1,0 +1,9 @@
+<h1>
+MOI
+</h1>
+<% if current_user %>
+	<%= link_to "CACHES", geocache_index_path, class: "" %>
+<% else %>
+	<%= link_to "Sign up", new_user_registration_path, class: "" %>
+	<%= link_to "Sign in", new_user_session_path, class: "" %>
+<% end %>

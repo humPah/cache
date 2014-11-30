@@ -1,0 +1,24 @@
+<table class="table table-striped">
+<thead>
+<th>name</th>
+<th>coordinates</th>
+<th>details</th>
+<th></th>
+<th></th>
+</thead>
+<tbody>
+<% @geocaches.each do |cache| %>
+<tr>
+<td><%= cache.name %></td>
+<td><%= cache.coordinates %></td>
+<td><%= link_to "Details", geocache_path(cache.id) %></td>
+<td><%= link_to "Edit", edit_geocache_path(cache.id) %></td>
+<td><%= link_to "Delete", geocache_path(cache.id), method: :delete, data: {confirm: "Are you sure?" }  %></td>
+</tr>
+<% end %>
+</tbody>
+</table>
+
+
+<%= link_to "Add a new geocache", new_geocache_path, class: "btn btn-default" %>
+</br>
